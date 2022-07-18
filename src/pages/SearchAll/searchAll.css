@@ -1,0 +1,14 @@
+.songResult {
+    position: relative;
+}
+
+.songResult .list-albums-time {
+    flex: unset !important;
+}
+
+.searchResult-show-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}

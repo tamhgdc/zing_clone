@@ -1,0 +1,106 @@
+.main {
+    width: calc(100% - var(--default-width-nav));
+    position: relative;
+    z-index: 1;
+    padding: 100px 60px 108px;
+    margin-left: var(--default-width-nav);
+    color: var(--white);
+    background-color: var(--default-bgcolor-body);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.boxBanner {
+    width: 100%;
+    position: relative;
+}
+
+.boxBanner::-webkit-scrollbar {
+    height: 0;
+}
+
+.pageTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.bannerImg,
+.btnImgList {
+    width: 100%;
+    min-height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+.imgList {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.bannerImg:hover .imgList {
+    transform: scale(1.1);
+}
+
+.bannerImg:hover .playSongMain {
+    display: flex;
+}
+
+.playSongMain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--white);
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.mainListMore,
+.mainListFullLike,
+.mainListLike {
+    font-size: 20px;
+}
+
+.mainListFullLike {
+    color: var(--color-default-secondary);
+    position: absolute;
+    font-size: 22px;
+}
+
+.icon.mainListPlay {
+    font-size: 50px;
+}
+
+.linkAlbum {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.songName {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 10px 0;
+    margin-top: 10px;
+    height: 25px;
+}
+
+.songerName {
+    color: var(--color-text-detail);
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 100%;
+}

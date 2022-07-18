@@ -1,0 +1,43 @@
+.render-album-item {
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.songName:hover {
+    color: var(--color-default-secondary);
+    text-decoration: underline;
+}
+
+.see-all {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 14px;
+    color: var(--color-text-detail);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.see-all:hover {
+    color: var(--color-text-hover);
+}
+
+.see-all .see-all-icon {
+    font-size: 16px;
+}
+
+.play-song-control {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bannerImg:hover .play-song-control {
+    display: flex;
+}
